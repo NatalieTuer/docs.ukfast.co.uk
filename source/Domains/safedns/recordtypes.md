@@ -18,6 +18,10 @@ An A record is used to map domain names to the IPv4 address of a resource on the
 
 An AAAA record is the same as the A record except it points the hostname to an IPv6 address instead of an IPv4 address. These records are only required if your server supports IPv6 traffic.
 
+* CAA 
+
+A CAA recordis used to specify which certification authorities are allowed to issue SSL/TLS certificates. If a CA recieves an order for a certificate for a domain whtih a CAA record and the CA isn't listed as an authorised user, they prohibit the certificate to the domain.
+
 * MX (Mail Exchanger) Record:
 
 An MX (Mail Exchanger) record specifies the servers that deal with incoming email and in which order your servers that will be tried if you have several and the preferred one is unavailable.
